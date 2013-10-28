@@ -28,7 +28,7 @@ class RPSAppTest < Test::Unit::TestCase
 
   def test_title
     get "/"
-    assert last_response.body.include? ("<title>RPS with Haml, CSS, Sessions and Testing</title>")
+    assert last_response.body.include? ("<title>RPS in Heroku</title>")
   end
 
   def test_styles
