@@ -1,0 +1,6 @@
+# Archivos de intercambio
+*.swp
+*~
+
+# Archivos comprimidos
+*.tar.gz

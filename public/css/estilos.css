@@ -1,0 +1,7 @@
+.nav.navbar-nav li { font-size: 1.5em; }
+.resultado { margin-top: 2.5%; }
+.jumbotron { padding-bottom: 1.5%; margin-bottom: 1%; }
+hr { color: #000; background-color: #000; height: 2px; }
+table { margin-left: 0; margin-right: 0; }
+tr { width: 0; }
+td, th { width: 300px; padding-right: 0; text-align: center; }

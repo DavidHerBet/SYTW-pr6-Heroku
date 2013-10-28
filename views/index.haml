@@ -1,0 +1,62 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %title RPS with Haml, CSS, Sessions and Testing
+    %link{:href => "/public/css/bootstrap.css", :rel => "stylesheet"}
+    %link{:href => "/public/css/estilos.css", :rel => "stylesheet"}
+    %script{:src => "http://code.jquery.com/jquery.js"}
+    %script{:src => "/public/js/bootstrap.js"}
+  %body
+    %header
+      %nav(class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation")
+        .container
+          %ul.nav.navbar-nav
+            - throws.map do |x| 
+              %li
+                %a{:href => "/?choice=#{x.to_s}"} #{x.to_s.capitalize}
+            %li.active
+              %a{:href => "/?choice=reset"} Reset
+            %li.dropdown
+              %a.dropdown-toggle{:href => "#", "data-toggle" => "dropdown"} Games played: #{games} <b class="caret"></b>
+              %ul.dropdown-menu
+                %li
+                  %a{:href => "#"}Games won: #{won}
+                %li
+                  %a{:href => "#"}Games lost: #{lost}
+                %li
+                  %a{:href => "#"}Games tied: #{ties}
+    %section.jumbotron
+      .container
+        %h1 Welcome to Rock, Paper, Scissors with Haml, CSS, Sessions and Testing
+        %p
+          To start playing clasical Rock, Paper, Scissors game choose a throw (you can select it from the navbar too):
+        .row.text-center
+          .col-sm-4.col-md-3
+            %a(href="/?choice=rock" class="thumbnail")
+              Rock
+              %img(src="/public/img/piedra.jpg" alt="Rock" height="100" width="135px" style="display: block;")
+          .col-sm-4.col-md-3
+            %a(href="/?choice=paper" class="thumbnail")
+              Paper
+              %img(src="/public/img/papel.jpg" alt="Paper" height="100px" width="100px" style="display: block;")
+          .col-sm-4.col-md-3
+            %a(href="/?choice=scissors" class="thumbnail")
+              Scissors
+              %img(src="/public/img/tijeras.jpg" alt="Scissors" height="100px" width="168px" style="display: block;")
+        .row.text-center
+          - if !player_throw.nil? and throws.include?(player_throw)
+            %hr
+            %table
+              %tr
+                %th Your choice
+                %th Computer choice
+                %th Result
+              %tr
+                %td= player_throw.capitalize
+                %td= computer_throw.capitalize
+                %td= answer
+    %footer.container
+      %p.text-center Systems and Web Technologies - David Hernández Bethencourt
+      %p.text-center
+        %a(href="https://github.com/DavidHerBet/SYTW-pr5-Pruebas")Source code on Github
