@@ -119,13 +119,3 @@ module RockPaperScissors
     end # call
   end   # App
 end     # RockPaperScissors
-
-# Usar como librería/programa  
-if $0 == __FILE__
-  require 'rack'
-  Rack::Server.start(
-    :app => RockPaperScissors::App.new, 
-    :Port => 9292,
-    :server => 'thin'
-  )
-end
