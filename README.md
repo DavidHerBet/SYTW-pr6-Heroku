@@ -15,7 +15,10 @@ Fuente: [Heroku - Wikipedia](http://es.wikipedia.org/wiki/Heroku)
 
 Instrucciones
 -------------
-1. Abre el navegador y accede a [RPS en Heroku](http://david-herbet-rps.herokuapp.com/)
+1. Abre el navegador y accede a [RPS en Heroku](http://david-herbet-rps.herokuapp.com/):
+
+        http://david-herbet-rps.herokuapp.com/
+
 2. Comprueba que todo funciona correctamente
 
 
