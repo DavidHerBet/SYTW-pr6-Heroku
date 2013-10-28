@@ -13,6 +13,12 @@ Heroku es propiedad de Salesforce.com. Heroku, es una de las primeras plataforma
 
 Fuente: [Heroku - Wikipedia](http://es.wikipedia.org/wiki/Heroku)
 
+Instrucciones
+-------------
+1. Abre el navegador y accede a [RPS en Heroku](http://david-herbet-rps.herokuapp.com/)
+2. Comprueba que todo funciona correctamente
+
+
 ---
 Universidad de La Laguna  
 Escuela Técnica Superior de Ingeniería Informática
